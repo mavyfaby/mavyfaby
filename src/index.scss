@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@/assets/theme/github.css";
+@import "@/assets/theme/facebook.css";
+@import "@/assets/theme/linkedin.css";
+
+$vt-color-success: theme("colors.emerald.500");
+$vt-text-color-success: theme("colors.white");
+
+$vt-color-warning: theme("colors.yellow.300");
+$vt-text-color-warning: theme("colors.yellow.800");
+
+@import "vue-toastification/src/scss/_variables";
+@import "vue-toastification/src/scss/_toastContainer";
+@import "vue-toastification/src/scss/_toast";
+@import "vue-toastification/src/scss/_closeButton";
+@import "vue-toastification/src/scss/_progressBar";
+@import "vue-toastification/src/scss/_icon";
+@import "vue-toastification/src/scss/animations/_bounce";
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.toggle-bg::after {
+    content: '';
+    @apply absolute top-0.5 left-0.5 bg-white dark:bg-slate-600 border border-slate-300 rounded-full h-5 w-5 transition shadow-sm;
+}
+
+input:checked + .toggle-bg::after {
+    transform: translateX(100%);
+    @apply border-white dark:border-slate-600;
+}
+
+input:checked + .toggle-bg {
+    @apply bg-slate-600 border-slate-600 dark:bg-slate-800 dark:border-slate-800;
+}
+
+html[data-color-scheme="dark"] {
+  color-scheme: dark;
+}
+
+html[data-color-scheme="github"] {
+  color-scheme: github;
+}
+
+.grecaptcha-badge {
+  @apply invisible;
+}
+
+::-moz-selection {
+  @apply bg-blue-400 text-blue-900;
+}
+
+::selection {
+  @apply bg-blue-400 text-blue-900;
+}

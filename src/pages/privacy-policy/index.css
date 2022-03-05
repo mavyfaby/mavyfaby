@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+::-moz-selection {
+  @apply bg-blue-400 text-blue-900;
+}
+
+::selection {
+  @apply bg-blue-400 text-blue-900;
+}
