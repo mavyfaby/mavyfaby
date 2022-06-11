@@ -1,14 +1,17 @@
-## Hi there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="24px">
+## Hi there <img src="https://media.giphy.com/media/DxJxiRFLjAn8kqiWdd/giphy.gif" width="32">
 
-<p>
+<div>
   <a href="https://facebook.com/mavyfaby">
-    <img align="left" alt="Maverick's Facebook" width="24px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/facebook.svg" />
+    <img align="left" alt="Maverick's Facebook" width="42" src="https://media.giphy.com/media/GjkCs56IPk8pvh1ncs/giphy.gif" />
   </a>
+</div>
+<div>
   <a href="https://www.linkedin.com/in/mavyfaby/">
-    <img align="left" alt="Maverick's LinkedIn" width="24px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" />
+    <img align="right" alt="Maverick's LinkedIn" width="42" src="https://media.giphy.com/media/yDM1kJZthxFPoGDdmq/giphy.gif" />
   </a>
-</p>
+</div>
 
+<br />
 <br />
 <br />
 
