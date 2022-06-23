@@ -16,7 +16,7 @@
 <br />
 
 Hi, My name is [Maverick G. Fabroa](https://mavyfaby.me), who's currently pursuing a Bachelor's degree in Computer Science at the University of Cebu – Main Campus.
-I reside in Mandaue City, Cebu here at Philippines. I have 3 years of experience in full-stack web development and a knowledge of [Ionic Framework](https://ionicframework.com/) and [Flutter](https://flutter.dev/) as mobile app development.
+I reside in Mandaue City, Cebu here at Philippines. I have 4 years of experience in full-stack web development and a knowledge of [Ionic Framework](https://ionicframework.com/) and [Flutter](https://flutter.dev/) as mobile app development.
 
 <p align="center"><img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mavyfaby&theme=github_dark" alt="TopCodeBeast" align = "center"/></p>
 
