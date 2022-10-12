@@ -45,7 +45,7 @@ I reside in Mandaue City, Cebu here at Philippines. I have 4 years of experience
 
 | | |
 | - | - |
-| [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=mavyfaby&repo=bezier-curve&theme=github_dark&hide_border=true)](https://github.com/mavyfaby/bezier-curve) | [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=mavyfaby&repo=twosday&theme=github_dark&hide_border=true)](https://github.com/mavyfaby/twosday)
+| [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=mavyfaby&repo=hlsc&theme=github_dark&hide_border=true)](https://github.com/mavyfaby/hlsc) | [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=mavyfaby&repo=bezier-curve&theme=github_dark&hide_border=true)](https://github.com/mavyfaby/bezier-curve)
 | [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=mavyfaby&repo=pldt-home-data-viewer&theme=github_dark&hide_border=true)](https://github.com/mavyfaby/pldt-home-data-viewer) | [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=mavyfaby&repo=simple-calculator&theme=github_dark&hide_border=true)](https://github.com/mavyfaby/simple-calculator)
 | [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=mavyfaby&repo=student-data-entry&theme=github_dark&hide_border=true)](https://github.com/mavyfaby/student-data-entry) | [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=mavyfaby&repo=covid-ph-tracker&theme=github_dark&hide_border=true)](https://github.com/mavyfaby/covid-ph-tracker)
 
