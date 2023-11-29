@@ -25,7 +25,10 @@ const toastOptions = {
 
 // Install reCAPTCHA v3
 app.use(VueReCaptcha, {
-    siteKey: "6Lf3dqkeAAAAAFGdbxvvff_hDK5xF5Jz-XeoVA_w"
+    siteKey: "6Lc1jz4cAAAAAIn4sZ4nJ3sYn6X8Z5v4G1N9mZ0q",
+    loaderOptions: {
+        useRecaptchaNet: true,
+    },
 });
 
 // Install material icons

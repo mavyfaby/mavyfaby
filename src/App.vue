@@ -43,7 +43,7 @@
 <script setup>
 import { ref, watch, onMounted, onBeforeMount } from "vue";
 import { changeTheme, initTheme, isTheme } from "@/utils";
-import { MenuIcon } from "@heroicons/vue/solid";
+import MenuIcon from "@heroicons/vue/24/solid/Bars3Icon";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";

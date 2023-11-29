@@ -6,7 +6,7 @@ import Parallax from "../lib/parallax";
  * Start animation in section 3
  * @param callback A callback function when animation is complete
  */
- export function startAnimS3(callback?: Function) {
+ export function startAnimS3(_?: () => void) {
   if (!isTouchscreen()) {
    new Parallax(document.getElementById("section-3"));
   }

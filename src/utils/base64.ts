@@ -5,7 +5,7 @@ export function base64encode(str: string) {
     // Check if param is not empty
     if (str.length > 0) {
         // Encode the string param as base64 and remove padding
-        return btoa(str).replaceAll("=", "");
+        return btoa(str).replace(/=/g, "");
     }
 
     // Otherwise, return empty string

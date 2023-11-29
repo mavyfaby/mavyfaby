@@ -73,7 +73,7 @@ onMounted(() => {
   const boxes: any = [];
   let timeScaleTarget = 1, counter = 0;
 
-  Events.on(engine, 'afterUpdate', function(event: any) {
+  Events.on(engine, 'afterUpdate', function() {
     // Tween the timescale for bullet time slow-mo
     engine.timing.timeScale += (timeScaleTarget - engine.timing.timeScale) * 0.05;
     counter += 1;
@@ -194,9 +194,6 @@ onMounted(() => {
 
   // Add mouse control
   const mouse = Mouse.create(render.canvas);
-  mouse.element.removeEventListener("mousewheel", mouse.mousewheel);
-  mouse.element.removeEventListener("DOMMouseScroll", mouse.mousewheel);
-
   const mouseConstraint = MouseConstraint.create(engine, {
     mouse, constraint: {
       stiffness: 0.2,

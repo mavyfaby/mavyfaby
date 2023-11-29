@@ -8,8 +8,8 @@
           About Me
         </h2>
         <p class="mx-5 md:mx-0 text-md md:text-lg text-slate-600 text-center md:text-left leading-8 md:leading-9 dark:text-slate-400" id="section-2-content">
-          Hi, My name is Maverick G. Fabroa, who's currently pursuing a Bachelor's degree in Computer Science at the University of Cebu – Main Campus.
-          I reside in Mandaue City, Cebu here at Philippines. I have 3 years of experience in full-stack web development and a knowledge of Ionic Framework and Flutter as mobile app development.
+          Hi, my name is Maverick Fabroa, and I am a Bachelor of Science in Computer Science student at the University of Cebu - Main Campus.
+          I am currently based in Cebu, Philippines, and I have 5 years of experience in software development and a knowledge of Ionic Framework and Flutter as mobile app development kits.
         </p>
       </div>
     </section>

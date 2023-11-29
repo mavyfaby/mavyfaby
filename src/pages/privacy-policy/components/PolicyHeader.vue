@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import LinkIcon from "@heroicons/vue/solid/LinkIcon";
+import LinkIcon from "@heroicons/vue/24/solid/LinkIcon";
 
 const props = defineProps({
   id: {

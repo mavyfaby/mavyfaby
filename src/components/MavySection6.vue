@@ -102,9 +102,9 @@ import { useToast } from "vue-toastification";
 import { parseContactResponse, base64encode, isTouchscreen } from "../utils";
 import { useReCaptcha } from 'vue-recaptcha-v3'
 
-import MailIcon from "@heroicons/vue/outline/esm/MailIcon";
-import PhoneIcon from "@heroicons/vue/outline/esm/PhoneIcon";
-import LocationMarkerIcon from "@heroicons/vue/outline/esm/LocationMarkerIcon";
+import MailIcon from "@heroicons/vue/24/outline/esm/EnvelopeIcon"
+import PhoneIcon from "@heroicons/vue/24/outline/esm/PhoneIcon";
+import LocationMarkerIcon from "@heroicons/vue/24/outline/esm/MapIcon";
 
 import Parallax from "../lib/parallax";
 import gsap from "gsap";
