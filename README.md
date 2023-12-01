@@ -24,9 +24,9 @@ Hi, my name is [Maverick Fabroa](https://mavyfaby.me), and I am a Bachelor of Sc
 
 | | |
 | - | - |
-| [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Links2004&repo=arduinoWebSockets&show_owner=true&theme=github_dark&hide_border=true)](https://github.com/Links2004/arduinoWebSockets) | [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=flutternetwork&repo=WiFiFlutter&show_owner=true&theme=github_dark&hide_border=true)](https://github.com/alternadom/WiFiFlutter) |
-| [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=DanSnow&repo=vue-recaptcha&show_owner=true&theme=github_dark&hide_border=true)](https://github.com/DanSnow/vue-recaptcha) | [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=westdabestdb&repo=bubble_bottom_bar&show_owner=true&theme=github_dark&hide_border=true)](https://github.com/westdabestdb/bubble_bottom_bar) 
-| [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CodingTrain&repo=website&show_owner=true&theme=github_dark&hide_border=true)](https://github.com/CodingTrain/website) |  | 
+| [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=material-components&repo=material-web&show_owner=true&theme=github_dark&hide_border=true)](https://github.com/material-components/material-web) | [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Links2004&repo=arduinoWebSockets&show_owner=true&theme=github_dark&hide_border=true)](https://github.com/Links2004/arduinoWebSockets) |
+| [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=flutternetwork&repo=WiFiFlutter&show_owner=true&theme=github_dark&hide_border=true)](https://github.com/alternadom/WiFiFlutter) | [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=DanSnow&repo=vue-recaptcha&show_owner=true&theme=github_dark&hide_border=true)](https://github.com/DanSnow/vue-recaptcha)  
+| [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=westdabestdb&repo=bubble_bottom_bar&show_owner=true&theme=github_dark&hide_border=true)](https://github.com/westdabestdb/bubble_bottom_bar) | [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CodingTrain&repo=website&show_owner=true&theme=github_dark&hide_border=true)](https://github.com/CodingTrain/website) | 
 
 ### 🔧 Technologies and Tools
 
