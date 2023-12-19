@@ -8,10 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.0.18",
-    "@mdi/js": "^7.3.67",
-    "flowbite": "^2.2.0",
-    "gsap": "^3.12.2",
+    "@heroicons/vue": "^2.1.1",
+    "@mdi/js": "^7.4.47",
+    "flowbite": "^2.2.1",
+    "gsap": "^3.12.4",
     "matter-js": "^0.19.0",
     "mdi-vue": "^3.0.13",
     "mitt": "^3.0.1",
@@ -19,22 +19,22 @@
     "raf": "^3.4.1",
     "tippy.js": "^6.3.7",
     "typed.js": "^2.1.0",
-    "vue": "^3.3.9",
+    "vue": "^3.4.0",
     "vue-recaptcha-v3": "^2.0.1",
     "vue-toastification": "^2.0.0-rc.5",
     "vue3-picture-swipe": "^3.0.6"
   },
   "devDependencies": {
     "@types/matter-js": "^0.19.5",
-    "@types/node": "^20.10.0",
-    "@vitejs/plugin-vue": "^4.5.0",
+    "@types/node": "^20.10.5",
+    "@vitejs/plugin-vue": "^5.0.0",
     "autoprefixer": "^10.4.16",
-    "cssnano": "^6.0.1",
+    "cssnano": "^6.0.2",
     "postcss": "^8.4.6",
-    "sass": "^1.69.5",
-    "tailwindcss": "^3.3.5",
-    "typescript": "^5.3.2",
+    "sass": "^1.69.6",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3",
     "vite": "^5.0.4",
-    "vue-tsc": "^1.8.24"
+    "vue-tsc": "^1.8.27"
   }
 }
