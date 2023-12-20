@@ -10,7 +10,7 @@
         </p>
       </div>
     </div>
-    <VuePictureSwipe :options="photoSwipeOptions" :items="courses"></VuePictureSwipe>
+    <VuePictureSwipe class="certs" :options="photoSwipeOptions" :items="courses"></VuePictureSwipe>
   </section>
 </template>
 
@@ -87,26 +87,18 @@ onMounted(() => {
        }
      });
 
-    gsap.from(".my-gallery figure", {
+    gsap.from(".certs", {
       duration: 1,
       opacity: 0,
-      y: -100,
-      stagger: 0.2,
-      ease: "power2.out",
+      z: 3000,
+      ease: "power3.out",
       scrollTrigger: {
-         trigger: ".my-gallery",
+         trigger: ".certs",
          start: "center 75%",
          end: "center bottom",
          toggleActions: "play none resume reverse",
        }
     })
-    
-    gsap.utils.toArray(".my-gallery figure").forEach(el => {
-      let hover = gsap.to(el, {scale: 0.9, duration: 0.1, paused: true, ease: "power1.inOut"});
-
-      el.addEventListener("mouseenter", () => hover.play());
-      el.addEventListener("mouseleave", () => hover.reverse());
-    });;
   }, 0);
 });
 </script>
