@@ -15,7 +15,7 @@
 <br />
 <br />
 
-Hi, my name is [Maverick Fabroa](https://mavyfaby.me), and I am a Bachelor of Science in Computer Science graduate at the University of Cebu - Main Campus `A.Y 2023-2024`. I am currently based in Cebu, Philippines, and I have 6 years of experience in software development and a knowledge of [Ionic Framework](https://ionicframework.com/) and [Flutter](https://flutter.dev/) as mobile app development kits.
+Hi, my name is [Maverick Fabroa](https://mavyfaby.me), and I am a Bachelor of Science in Computer Science graduate at the University of Cebu - Main Campus `A.Y 2023-2024`. I am currently based in Cebu, Philippines, and I have 8 years of experience in software development and a knowledge of [Ionic Framework](https://ionicframework.com/) and [Flutter](https://flutter.dev/) as mobile app development kits.
 
 
 <p align="center"><img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mavyfaby&theme=github_dark" alt="TopCodeBeast" align = "center"/></p>
