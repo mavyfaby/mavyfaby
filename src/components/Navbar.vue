@@ -14,7 +14,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
 
 const links = [
   { href: '#about', label: 'About' },
-  { href: '#skloud', label: 'SKLoud' },
+  { href: '#skloud', label: 'SKLoud App' },
   { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
   { href: '#open-source', label: 'Open Source' },
