@@ -250,7 +250,7 @@ export const certificates = [
     issuer: 'Department of Science and Technology · PCIEERD',
     year: '2025',
     description:
-      'We, SKLoud SDS team, led the winning of the SKLoud Aurora proposal — a blockchain-based financial transparency platform for Sangguniang Kabataan units, powered by the SKLoud Blockchain Network. Granted ₱2.9M to develop as principal architect.',
+      'We, the SKLoud SDS team, helped secure the SKLoud Aurora proposal — a blockchain-based financial transparency platform for Sangguniang Kabataan units, powered by the SKLoud Blockchain Network. Granted ₱2.9M to develop as principal architect.',
     category: 'award',
   },
   {
