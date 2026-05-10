@@ -1,15 +1,78 @@
 ---
 import '../styles/global.css'
+import { profile, skills } from '../data/portfolio'
+import graduationPic from '../assets/graduation-pic.jpg'
 
 interface Props {
   title?: string
   description?: string
+  image?: string
+  keywords?: string[]
+  noindex?: boolean
 }
 
 const {
   title = "Maverick Fabroa — Software Engineer & Architect",
   description = "Performance-driven, security-first systems. CTO @ SKLoud App. Building across Rust, Go, TypeScript, Vue, and Flutter.",
+  image = graduationPic.src,
+  keywords = [
+    'Maverick Fabroa',
+    'Mavyfaby',
+    'Software Engineer',
+    'Software Architect',
+    'SKLoud App',
+    'Vue developer',
+    'Astro developer',
+    'Rust developer',
+    'Cebu Philippines developer',
+  ],
+  noindex = false,
 } = Astro.props
+
+const siteUrl = profile.socials.website
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString()
+const imageUrl = new URL(image, siteUrl).toString()
+const pageKeywords = Array.from(new Set([...keywords, ...skills.slice(0, 8).map((skill) => skill.name)]))
+const socialProfiles = Object.values(profile.socials).filter((url) => url !== siteUrl)
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: profile.name,
+    alternateName: profile.handle,
+    jobTitle: profile.role,
+    description: profile.bio,
+    email: profile.email,
+    image: imageUrl,
+    url: siteUrl,
+    sameAs: socialProfiles,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Mandaue City',
+      addressRegion: 'Cebu',
+      addressCountry: 'PH',
+    },
+    worksFor: {
+      '@type': 'Organization',
+      name: 'SKLoud App',
+      url: 'https://skloud.app',
+    },
+    knowsAbout: pageKeywords,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Mavyfaby',
+    alternateName: profile.name,
+    url: siteUrl,
+    description,
+    author: {
+      '@type': 'Person',
+      name: profile.name,
+      url: siteUrl,
+    },
+  },
+]
 ---
 
 <!doctype html>
@@ -21,10 +84,24 @@ const {
     <meta name="theme-color" content="#09090b" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
+    <meta name="author" content={profile.name} />
+    <meta name="creator" content={profile.name} />
+    <meta name="keywords" content={pageKeywords.join(', ')} />
+    <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
+    <link rel="canonical" href={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content="Mavyfaby" />
+    <meta property="og:locale" content="en_PH" />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content={`${profile.name}, ${profile.role}`} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+    <meta name="twitter:creator" content="@mavyfaby" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,6 +109,7 @@ const {
       rel="stylesheet"
     />
     <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
     <script is:inline>
       (function () {
         try {
