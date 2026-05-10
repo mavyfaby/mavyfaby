@@ -1,16 +1,32 @@
 ---
-
+import Layout from '../layouts/Layout.astro'
+import Navbar from '../components/Navbar.vue'
+import Hero from '../components/Hero.vue'
+import About from '../components/About.vue'
+import SkLoud from '../components/SkLoud.vue'
+import Marquee from '../components/Marquee.vue'
+import Skills from '../components/Skills.vue'
+import Projects from '../components/Projects.vue'
+import OpenSource from '../components/OpenSource.vue'
+import Certificates from '../components/Certificates.vue'
+import Contact from '../components/Contact.vue'
+import Footer from '../components/Footer.vue'
+import SalInit from '../components/SalInit.vue'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Mayyfaby</title>
-	</head>
-	<body>
-		<h1>Hi, I'm Mavyfaby. This is my website and it's under construction yet. Stay tuned!</h1>
-	</body>
-</html>
+<Layout>
+  <Navbar client:load />
+  <main>
+    <Hero client:load />
+    <About client:visible />
+    <SkLoud client:visible />
+    <Marquee client:visible />
+    <Skills client:visible />
+    <Projects client:visible />
+    <OpenSource client:visible />
+    <Certificates client:visible />
+    <Contact client:visible />
+  </main>
+  <Footer client:visible />
+  <SalInit client:load />
+</Layout>

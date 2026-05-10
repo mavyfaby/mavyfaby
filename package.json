@@ -9,6 +9,19 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.14.1"
+    "@astrojs/vue": "^6.0.1",
+    "@tailwindcss/vite": "^4.3.0",
+    "@vueuse/core": "^14.3.0",
+    "astro": "6.3.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-vue-next": "^1.0.0",
+    "reka-ui": "^2.9.7",
+    "sal.js": "^0.8.5",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss": "^4.3.0",
+    "three": "^0.184.0",
+    "tw-animate-css": "^1.4.0",
+    "vue": "^3.5.34"
   }
 }
