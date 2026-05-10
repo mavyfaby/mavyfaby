@@ -11,6 +11,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // https://astro.build/config
 export default defineConfig({
   integrations: [vue()],
+  server: {
+    port: 4000
+  },
   vite: {
     plugins: [tailwindcss()],
     resolve: {

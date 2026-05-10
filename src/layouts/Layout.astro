@@ -13,11 +13,12 @@ const {
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark" style="color-scheme: dark">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#09090b" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
@@ -34,11 +35,14 @@ const {
     <script is:inline>
       (function () {
         try {
+          var darkColor = '#09090b';
+          var lightColor = '#ffffff';
           var saved = localStorage.getItem('theme');
-          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          var theme = saved || (prefersDark ? 'dark' : 'light');
-          if (theme === 'dark') document.documentElement.classList.add('dark');
+          var theme = saved === 'light' ? 'light' : 'dark';
+          document.documentElement.classList.toggle('dark', theme === 'dark');
           document.documentElement.style.colorScheme = theme;
+          var themeColor = document.querySelector('meta[name="theme-color"]');
+          if (themeColor) themeColor.setAttribute('content', theme === 'dark' ? darkColor : lightColor);
         } catch (e) {}
       })();
     </script>

@@ -6,12 +6,14 @@ const theme = ref<'dark' | 'light'>('dark')
 function apply(t: 'dark' | 'light') {
   document.documentElement.classList.toggle('dark', t === 'dark')
   document.documentElement.style.colorScheme = t
+  document
+    .querySelector('meta[name="theme-color"]')
+    ?.setAttribute('content', t === 'dark' ? '#09090b' : '#ffffff')
 }
 
 onMounted(() => {
   const saved = (localStorage.getItem('theme') as 'dark' | 'light' | null)
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-  theme.value = saved ?? (prefersDark ? 'dark' : 'light')
+  theme.value = saved === 'light' ? 'light' : 'dark'
   apply(theme.value)
 })
 
