@@ -123,6 +123,18 @@ export const projects = [
     status: 'in-progress',
   },
   {
+    name: 'Pulse',
+    description:
+      'An open-source community emergency response network for the Philippines — hold one button to summon nearby volunteer responders with your location, no mobile subscription or load required. Built in Rust to fill the gaps that 911 leaves. Currently in active development.',
+    language: 'Rust',
+    stars: 2,
+    url: 'https://pulse.mavyfaby.com',
+    tags: ['emergency-response', 'bayanihan', 'in progress'],
+    featured: true,
+    highlight: true,
+    status: 'in-progress',
+  },
+  {
     name: 'tiny-excel',
     description: 'A promise-based, fast and simple .xlsx file editor using Bun APIs.',
     language: 'TypeScript',
@@ -299,6 +311,22 @@ export const certificates = [
     year: '2024',
     description:
       'Completed the ServiceNow developer training program — application design, scripting, and platform fundamentals.',
+    category: 'cert',
+  },
+  {
+    title: 'Coursera — 6 Course Certificates',
+    issuer: 'Coursera',
+    year: '2020',
+    description:
+      'Completed coursework in Python (Programming for Everybody, Data Structures), JavaScript/HTML/CSS programming foundations (with Honors), PHP & MySQL web apps, Streamlit dashboards, and Flutter app development.',
+    category: 'cert',
+  },
+  {
+    title: 'SoloLearn — 4 Course Certificates',
+    issuer: 'SoloLearn',
+    year: '2018 — 2020',
+    description:
+      'Completed foundational programming courses in HTML, CSS, JavaScript, and Java.',
     category: 'cert',
   },
   {
