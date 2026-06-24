@@ -135,6 +135,16 @@ export const projects = [
     status: 'in-progress',
   },
   {
+    name: 'andri',
+    description:
+      'All-in-one LAN speed tester in one Rust binary — TCP throughput, UDP loss/jitter, and real file-transfer speed, with network-vs-disk isolation.',
+    language: 'Rust',
+    stars: null,
+    url: 'https://github.com/mavyfaby/andri',
+    tags: ['rust', 'networking', 'cli'],
+    featured: true,
+  },
+  {
     name: 'tiny-excel',
     description: 'A promise-based, fast and simple .xlsx file editor using Bun APIs.',
     language: 'TypeScript',
@@ -159,15 +169,6 @@ export const projects = [
     stars: 5,
     url: 'https://github.com/mavyfaby/student_app',
     tags: ['flutter', 'material3', 'sqflite'],
-    featured: true,
-  },
-  {
-    name: 'qualthea-api',
-    description: 'Go-based REST API for a bookstore with AI-powered book recommendations.',
-    language: 'Go',
-    stars: 0,
-    url: 'https://github.com/mavyfaby/qualthea-api',
-    tags: ['go', 'rest', 'ai'],
     featured: true,
   },
   {
@@ -303,7 +304,7 @@ export const certificates = [
     year: '2024',
     description:
       'Completed the AWS ATA program covering cloud architecture, core services, security, and operational best practices on AWS.',
-    category: 'cert',
+    category: 'platform',
   },
   {
     title: 'ServiceNow — Course Completer',
@@ -311,15 +312,111 @@ export const certificates = [
     year: '2024',
     description:
       'Completed the ServiceNow developer training program — application design, scripting, and platform fundamentals.',
-    category: 'cert',
+    category: 'platform',
   },
   {
-    title: 'Coursera — 6 Course Certificates',
+    title: 'Python for Everybody Specialization',
     issuer: 'Coursera',
     year: '2020',
-    description:
-      'Completed coursework in Python (Programming for Everybody, Data Structures), JavaScript/HTML/CSS programming foundations (with Honors), PHP & MySQL web apps, Streamlit dashboards, and Flutter app development.',
-    category: 'cert',
+    description: 'Specialization certificate covering Python fundamentals, data structures, web data, databases, and a capstone project.',
+    category: 'coursera',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/specialization/9LK6GM63LWPL?ref=mavyfaby.com',
+  },
+  {
+    title: 'Capstone: Retrieving, Processing, and Visualizing Data with Python',
+    issuer: 'Coursera',
+    year: '2020',
+    description: 'Course certificate for the Python for Everybody capstone project.',
+    category: 'coursera',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/8BLX3Q7UNWZJ?ref=mavyfaby.com',
+  },
+  {
+    title: 'Using Databases with Python',
+    issuer: 'Coursera',
+    year: '2020',
+    description: 'Course certificate covering Python database access and SQL-backed application data.',
+    category: 'coursera',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/M9UU9BQVN49A?ref=mavyfaby.com',
+  },
+  {
+    title: 'Crash Course on Python',
+    issuer: 'Coursera',
+    year: '2020',
+    description: 'Course certificate covering Python scripting, automation fundamentals, and problem solving.',
+    category: 'coursera',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/6T4YEQZD9A5W?ref=mavyfaby.com',
+  },
+  {
+    title: 'Using Python to Access Web Data',
+    issuer: 'Coursera',
+    year: '2020',
+    description: 'Course certificate covering web scraping, APIs, and networked data access with Python.',
+    category: 'coursera',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/GK5MTDMYKDSD?ref=mavyfaby.com',
+  },
+  {
+    title: 'Java Programming: Solving Problems with Software',
+    issuer: 'Coursera · With Honors',
+    year: '2020',
+    description: 'Honors certificate covering Java programming fundamentals and software problem solving.',
+    category: 'coursera',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/7GYA6WTLTDEX?ref=mavyfaby.com',
+  },
+  {
+    title: 'Enterprise System Management and Security',
+    issuer: 'Coursera',
+    year: '2020',
+    description: 'Course certificate covering enterprise system administration and security foundations.',
+    category: 'coursera',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/6LXDDSF2QGYC?ref=mavyfaby.com',
+  },
+  {
+    title: 'Python Data Structures',
+    issuer: 'Coursera',
+    year: '2020',
+    description: 'Course certificate covering Python collections, data handling, and program structure.',
+    category: 'coursera',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/KWDK27BZUMPZ?ref=mavyfaby.com',
+  },
+  {
+    title: 'Programming for Everybody (Getting Started with Python)',
+    issuer: 'Coursera',
+    year: '2020',
+    description: 'Course certificate for foundational Python programming and problem solving.',
+    category: 'coursera',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/FG6BJJMHVVEH?ref=mavyfaby.com',
+  },
+  {
+    title: 'Building a Dynamic Web App using PHP & MySQL',
+    issuer: 'Coursera',
+    year: '2020',
+    description: 'Course certificate covering server-side web application fundamentals with PHP and MySQL.',
+    category: 'coursera',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/KVPD4HMGUBMG?ref=mavyfaby.com',
+  },
+  {
+    title: 'Programming Foundations with JavaScript, HTML and CSS',
+    issuer: 'Coursera · With Honors',
+    year: '2020',
+    description: 'Honors certificate covering web programming foundations with JavaScript, HTML, and CSS.',
+    category: 'coursera',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/P6GCJMQPH7GC?ref=mavyfaby.com',
+  },
+  {
+    title: 'Create Interactive Dashboards with Streamlit and Python',
+    issuer: 'Coursera',
+    year: '2020',
+    description: 'Course certificate for building interactive Python dashboards with Streamlit.',
+    category: 'coursera',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/FAGCXRX9GACQ?ref=mavyfaby.com',
+  },
+  {
+    title: 'Creating an Interactive Story with Flutter',
+    issuer: 'Coursera',
+    year: '2020',
+    description: 'Course certificate covering Flutter app development fundamentals.',
+    category: 'coursera',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/5XGBDMDDQZC3?ref=mavyfaby.com',
   },
   {
     title: 'SoloLearn — 4 Course Certificates',
@@ -327,7 +424,7 @@ export const certificates = [
     year: '2018 — 2020',
     description:
       'Completed foundational programming courses in HTML, CSS, JavaScript, and Java.',
-    category: 'cert',
+    category: 'foundation',
   },
   {
     title: 'Intercampus ICT Congress 2024 — Registration & Attendance App',
@@ -373,38 +470,24 @@ export const certificates = [
 
 export const experience = [
   {
-    role: 'Co-Founder, CTO & Lead Engineer',
+    role: 'Co-Founder & CTO',
     company: 'SKLoud App',
     period: '2024 — Present',
     description:
       'Co-founded SKLoud App and led it from concept to production. Authored SKLoud Aurora — the winning DOST-PCIEERD proposal (₱2.9M grant) — and lead the SKLoud Blockchain Network as principal architect.',
   },
   {
-    role: 'Full-Stack & Systems Engineer',
-    company: 'Independent · Open Source',
-    period: '2019 — Present',
+    role: 'Project Manager / Full-stack Developer / UI/UX Designer',
+    company: 'Computing Society of the Philippines - Students · UC Main',
+    period: 'Apr 2023 — Jun 2024',
     description:
-      'Shipped 69+ public projects across Rust, Go, TypeScript, Vue, and Flutter. Contributed to PrimeVue, Material Web, and various Flutter plugins.',
+      'Served as Project Manager and Lead Full-Stack Developer for UC Main CSP-S A.Y. 2023-2024, leading delivery of student organization systems and designing polished web experiences.',
   },
   {
-    role: 'Project Manager — UC CSP-S',
-    company: 'Computer Science Program Society · UC Main',
-    period: '2023 — 2024',
+    role: 'IT Supervisor / Senior Software Engineer',
+    company: 'Wellmade Motors & Development Corp.',
+    period: 'Nov 2019 — Present',
     description:
-      'Led project management for CSP-S. Built and shipped the UC Main CSP-S Web App used by the org. Outgoing PM after a year of cross-team delivery.',
-  },
-  {
-    role: 'Hackathon Champion',
-    company: 'ICT Congress 2024 · ByteCode7',
-    period: '2024',
-    description:
-      'Led a winning team to build INTRVWR — an AI-assisted interview platform — taking first place at UC Main.',
-  },
-  {
-    role: 'CTF Top 2 Individual · Region VII',
-    company: 'Hack4Gov 2023 · DICT',
-    period: '2023',
-    description:
-      'Placed 2nd overall in individual scoring at the Hack4Gov 2023 CTF, against participants from 7 schools across Region VII.',
+      'Current IT Supervisor / Senior Software Engineer. Previously Junior Software Engineer and Junior Full-stack Developer (Work Immersion Trainee). Designed and developed a full-scale ERP platform supporting modern, multi-branch operations.',
   },
 ]

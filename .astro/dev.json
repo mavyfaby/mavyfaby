@@ -1,0 +1,13 @@
+{
+	"pid": 6006,
+	"port": 4000,
+	"url": "http://localhost:4000",
+	"urls": {
+		"local": [
+			"http://localhost:4000/"
+		],
+		"network": []
+	},
+	"background": false,
+	"startedAt": "2026-06-24T23:07:38.246Z"
+}
