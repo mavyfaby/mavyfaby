@@ -55,21 +55,23 @@ const shadeStyle = (shade: number) => ({
           <h3 class="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
             Languages used
           </h3>
+          <!-- Segment widths still come from `percent`; the numbers themselves
+               aren't shown — the bar carries the proportion, order carries rank. -->
           <div class="flex h-3 rounded-full overflow-hidden mb-6 ring-1 ring-border">
             <div
               v-for="l in languages"
               :key="l.name"
               :style="{ width: l.percent + '%', ...shadeStyle(l.shade) }"
-              :title="`${l.name} ${l.percent}%`"
+              :title="l.name"
             ></div>
           </div>
-          <ul class="space-y-2.5">
-            <li v-for="l in languages" :key="l.name" class="flex items-center justify-between text-sm">
-              <span class="flex items-center gap-2.5">
-                <span class="w-2.5 h-2.5 rounded-sm ring-1 ring-border" :style="shadeStyle(l.shade)"></span>
-                <span>{{ l.name }}</span>
-              </span>
-              <span class="font-mono text-muted-foreground text-xs">{{ l.percent }}%</span>
+          <ul class="grid grid-cols-2 gap-x-4 gap-y-2.5">
+            <li v-for="l in languages" :key="l.name" class="flex items-center gap-2.5 text-sm">
+              <span
+                class="w-2.5 h-2.5 rounded-sm ring-1 ring-border shrink-0"
+                :style="shadeStyle(l.shade)"
+              ></span>
+              <span class="truncate">{{ l.name }}</span>
             </li>
           </ul>
         </Card>

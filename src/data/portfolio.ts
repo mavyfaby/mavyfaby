@@ -66,16 +66,16 @@ export const skloud = {
 // group runs from what I reach for most often to least.
 export const skillGroups = [
   {
-    name: 'Web',
-    items: ['TypeScript', 'JavaScript', 'Vue / Nuxt', 'Astro', 'Tailwind CSS', 'Bun / Node.js'],
+    name: 'Systems',
+    items: ['Go', 'Rust', 'Java', 'C / C#'],
   },
   {
-    name: 'Systems',
-    items: ['Rust', 'Go', 'Java', 'C / C#'],
+    name: 'Web',
+    items: ['TypeScript', 'Vue / Nuxt', 'Astro', 'Tailwind CSS', 'Bun / Node.js', 'JavaScript'],
   },
   {
     name: 'Mobile',
-    items: ['Flutter / Dart', 'Kotlin'],
+    items: ['Kotlin', 'Flutter / Dart'],
   },
   {
     name: 'Data & ML',
@@ -88,19 +88,22 @@ export const skills = skillGroups.flatMap((group) =>
   group.items.map((name) => ({ name })),
 )
 
+// Ordered by what I'm actually working in now — Go, Rust, and the web stack,
+// plus Kotlin — rather than by lifetime line count. `percent` only drives the
+// stacked-bar segment widths; the numbers aren't displayed.
 export const languages = [
-  { name: 'TypeScript', percent: 24, shade: 100 },
-  { name: 'JavaScript', percent: 18, shade: 90 },
-  { name: 'Vue (SFC)', percent: 15, shade: 80 },
-  { name: 'Java', percent: 14, shade: 70 },
-  { name: 'Dart', percent: 7, shade: 60 },
-  { name: 'Python', percent: 5, shade: 50 },
-  { name: 'Go', percent: 4, shade: 40 },
-  { name: 'HTML / CSS', percent: 4, shade: 35 },
-  { name: 'Kotlin', percent: 3, shade: 30 },
-  { name: 'Rust', percent: 2, shade: 25 },
+  { name: 'Go', percent: 18, shade: 100 },
+  { name: 'Rust', percent: 17, shade: 92 },
+  { name: 'TypeScript', percent: 16, shade: 84 },
+  { name: 'Vue (SFC)', percent: 12, shade: 76 },
+  { name: 'Kotlin', percent: 10, shade: 68 },
+  { name: 'JavaScript', percent: 8, shade: 60 },
+  { name: 'HTML / CSS', percent: 5, shade: 50 },
+  { name: 'Java', percent: 4, shade: 42 },
+  { name: 'Dart', percent: 4, shade: 34 },
+  { name: 'Python', percent: 3, shade: 26 },
   { name: 'C / C#', percent: 2, shade: 20 },
-  { name: 'Other', percent: 2, shade: 10 },
+  { name: 'Other', percent: 1, shade: 10 },
 ]
 
 export const projects = [
