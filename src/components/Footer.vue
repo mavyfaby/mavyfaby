@@ -20,10 +20,8 @@ const year = new Date().getFullYear()
         <a :href="profile.socials.stackoverflow" target="_blank" class="hover:text-foreground transition-colors">Stack Overflow</a>
         <a :href="`mailto:${profile.email}`" class="hover:text-foreground transition-colors">Email</a>
       </div>
-      <div class="font-mono text-xs flex items-center gap-1.5 text-center">
-        <span>Code is craft.</span>
-        <span class="opacity-30">·</span>
-        <span>Built to last, built to matter.</span>
+      <div class="font-mono text-xs text-center">
+        <span>Built in Cebu, Philippines.</span>
       </div>
     </div>
   </footer>

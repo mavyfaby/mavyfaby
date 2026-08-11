@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { skills, languages } from '@/data/portfolio'
+import { skillGroups, languages } from '@/data/portfolio'
 import SectionHeader from './ui/SectionHeader.vue'
 import Card from './ui/Card.vue'
 
@@ -15,7 +15,7 @@ const shadeStyle = (shade: number) => ({
         <SectionHeader
           kicker="Skills & Languages"
           title="Tools I reach for."
-          description="A pragmatic toolkit built up over 7+ years of shipping across systems, web, and mobile."
+          description="What I use across systems, web, and mobile work."
         />
       </div>
 
@@ -24,17 +24,28 @@ const shadeStyle = (shade: number) => ({
           <h3 class="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
             Technologies
           </h3>
-          <div class="grid sm:grid-cols-2 gap-x-8 gap-y-5">
-            <div v-for="(s, i) in skills" :key="s.name" data-sal="slide-up" data-sal-duration="500" :data-sal-delay="i * 50">
-              <div class="flex items-baseline justify-between mb-1.5">
-                <span class="text-sm font-medium">{{ s.name }}</span>
-                <span class="text-xs font-mono text-muted-foreground">{{ s.level }}%</span>
+          <div class="space-y-6">
+            <div
+              v-for="(group, i) in skillGroups"
+              :key="group.name"
+              data-sal="slide-up"
+              data-sal-duration="500"
+              :data-sal-delay="i * 60"
+            >
+              <div class="flex items-center gap-3 mb-3">
+                <span class="text-xs font-mono uppercase tracking-[0.15em] text-muted-foreground">
+                  {{ group.name }}
+                </span>
+                <span class="h-px flex-1 bg-border"></span>
               </div>
-              <div class="h-1 bg-border rounded-full overflow-hidden">
-                <div
-                  class="h-full bg-foreground rounded-full transition-all duration-1000"
-                  :style="{ width: s.level + '%' }"
-                ></div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  v-for="item in group.items"
+                  :key="item"
+                  class="rounded-md border border-border bg-secondary/60 px-2.5 py-1 text-sm"
+                >
+                  {{ item }}
+                </span>
               </div>
             </div>
           </div>

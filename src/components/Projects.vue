@@ -31,7 +31,7 @@ const dotStyle = (lang: string) => ({
           class="!mb-0"
           kicker="Selected Work"
           title="Projects."
-          description="From civic-tech infrastructure I lead at SKLoud, to systems libraries, hackathon wins, and side experiments."
+          description="Civic-tech infrastructure at SKLoud, systems libraries, and side experiments."
         />
         <div class="flex gap-1 p-1 border border-border rounded-md bg-card">
           <button
@@ -64,20 +64,17 @@ const dotStyle = (lang: string) => ({
             hover
             :class="[
               'p-6 h-full flex flex-col',
-              p.highlight && 'ring-1 ring-foreground/20 bg-foreground/2',
+              p.highlight && 'border-foreground/25',
             ]"
           >
             <div class="flex items-start justify-between mb-4">
               <div
                 :class="[
-                  'grid place-items-center w-10 h-10 rounded-md transition-colors',
-                  p.highlight
-                    ? 'bg-foreground text-background border border-foreground'
-                    : 'border border-border bg-secondary group-hover:bg-foreground group-hover:text-background group-hover:border-foreground',
+                  'grid place-items-center w-10 h-10 rounded-md border border-border bg-secondary transition-colors',
+                  'group-hover:bg-foreground group-hover:text-background group-hover:border-foreground',
                 ]"
               >
-                <svg v-if="p.highlight" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg v-else width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
               </div>
               <div class="flex items-center gap-2 text-xs font-mono text-muted-foreground">
                 <span v-if="p.status === 'in-progress'" class="flex items-center gap-1.5 text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full border border-foreground/30 bg-background text-foreground">
@@ -86,9 +83,6 @@ const dotStyle = (lang: string) => ({
                     <span class="relative inline-flex h-1.5 w-1.5 rounded-full bg-foreground"></span>
                   </span>
                   In Progress
-                </span>
-                <span v-else-if="p.highlight" class="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-foreground text-background">
-                  Flagship
                 </span>
                 <span v-else-if="p.stars" class="flex items-center gap-1">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -123,7 +117,7 @@ const dotStyle = (lang: string) => ({
           target="_blank"
           class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
-          See all 69+ repositories on GitHub
+          See all repositories on GitHub
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
         </a>
       </div>

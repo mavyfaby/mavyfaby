@@ -2,12 +2,12 @@ export const profile = {
   name: 'Maverick Fabroa',
   handle: 'mavyfaby',
   role: 'Software Engineer · Architect · Designer',
-  title: 'Co-Founder & CTO @ SKLoud App',
+  title: 'Co-Founder & CIO @ SKLoud App',
   location: 'Mandaue City, Cebu, Philippines',
   email: 'me@mavyfaby.com',
-  bio: 'Co-Founder & CTO of SKLoud App. I design and ship performance-driven, security-first systems — from low-level Rust services to blockchain infrastructure to polished interfaces.',
+  bio: 'I build civic-tech infrastructure for youth councils across the Philippines — from Rust services to blockchain systems to the interfaces on top of them.',
   longBio:
-    "I'm the Co-Founder & CTO of SKLoud App, where I lead engineering across web, mobile, and infrastructure. I led the development of SKLoud App from day one, and I'm the principal architect and lead software engineer behind SKLoud Aurora — our DOST-PCIEERD-funded initiative — and the SKLoud Blockchain Network powering it. I work across the stack: Rust and Go for systems, TypeScript with Vue/Nuxt/Astro on the web, Flutter on mobile, and distributed-ledger tech on chain. Performance budgets, clean architecture, and design that respects the user — that's the bar.",
+    "I'm the Co-Founder & CIO of SKLoud App, where I work on engineering across web, mobile, and infrastructure. I've been on it since day one, and I'm the lead architect for SKLoud Aurora — a DOST-PCIEERD-funded project — and the blockchain network behind it. Day to day that means Rust and Go for systems, TypeScript with Vue/Nuxt/Astro on the web, Flutter on mobile, and distributed-ledger work on chain. I care about performance budgets, clean architecture, and interfaces that don't waste the user's time.",
   socials: {
     github: 'https://github.com/mavyfaby',
     linkedin: 'https://linkedin.com/in/mavyfaby',
@@ -18,10 +18,8 @@ export const profile = {
     website: 'https://mavyfaby.com',
   },
   stats: [
-    { label: 'DOST Grant · SKLoud App', value: '₱2.9M' },
+    { label: 'Years Coding', value: '8+' },
     { label: 'Public Repos', value: '69+' },
-    { label: 'Years Coding', value: '7+' },
-    { label: 'Hackathon Wins', value: '1' },
   ],
 }
 
@@ -30,19 +28,19 @@ export const skloud = {
   tagline: 'Civic-tech infrastructure for the Sangguniang Kabataan.',
   description:
     'SKLoud App is a platform built to modernize how Sangguniang Kabataan (SK) units across the Philippines manage budgets, track projects, and stay compliant with government reporting requirements. We turn paperwork-heavy youth governance into a transparent, auditable, real-time system.',
-  role: 'Co-Founder, CTO & Lead Software Engineer',
+  role: 'Co-Founder, CIO & Software Engineer',
   highlights: [
     {
       icon: 'award',
-      title: 'SKLoud Aurora · DOST-PCIEERD Awardee',
+      title: 'SKLoud Aurora',
       description:
-        'SKLoud Aurora — our DOST-PCIEERD-funded initiative — won a ₱2.9M research grant in 2025 to build a blockchain-based financial transparency system for SK units nationwide.',
+        'A DOST-PCIEERD-funded research project, started 2025, building a blockchain-based financial transparency system for SK units.',
     },
     {
       icon: 'shield',
       title: 'SKLoud Blockchain Network',
       description:
-        'The SKLoud Blockchain Network is our purpose-built distributed ledger that records every SK transaction immutably — making misuse and tampering structurally impossible, not just policy-discouraged.',
+        'A purpose-built distributed ledger that records SK transactions immutably, so tampering is prevented by the system rather than by policy.',
     },
     {
       icon: 'cpu',
@@ -52,36 +50,43 @@ export const skloud = {
     },
     {
       icon: 'users',
-      title: 'For Every Barangay',
+      title: 'Built to Scale',
       description:
-        'Designed to scale across 42,000+ barangays nationwide. Built for the youth, by people who code.',
+        'Designed to work across the 42,000+ barangays nationwide, for youth councils that mostly run on paperwork today.',
     },
   ],
   myRole: [
-    'Co-founded SKLoud App and led it from concept to production.',
-    'Authored and led the SKLoud Aurora DOST-PCIEERD proposal — securing ₱2.9M in research funding.',
-    'Principal architect and lead engineer of the SKLoud Blockchain Network.',
-    'Owning the technical roadmap: smart contracts, ledger design, mobile/web stack, and infra.',
+    'Co-founded SKLoud App and worked on it from concept to production.',
+    'Lead architect for the SKLoud Blockchain Network.',
+    'Own the technical roadmap: smart contracts, ledger design, mobile/web stack, and infra.',
   ],
 }
 
-export const skills = [
-  { name: 'TypeScript', level: 88 },
-  { name: 'Vue / Nuxt', level: 85 },
-  { name: 'Tailwind CSS', level: 85 },
-  { name: 'Bun / Node.js', level: 80 },
-  { name: 'Astro', level: 70 },
-  { name: 'Java', level: 72 },
-  { name: 'JavaScript', level: 82 },
-  { name: 'Flutter / Dart', level: 65 },
-  { name: 'PostgreSQL / SQLite', level: 65 },
-  { name: 'Go', level: 55 },
-  { name: 'Kotlin', level: 50 },
-  { name: 'Python', level: 50 },
-  { name: 'Rust', level: 40 },
-  { name: 'C / C#', level: 40 },
-  { name: 'PyTorch', level: 35 },
+// Grouped by domain rather than self-rated percentages. Order within each
+// group runs from what I reach for most often to least.
+export const skillGroups = [
+  {
+    name: 'Web',
+    items: ['TypeScript', 'JavaScript', 'Vue / Nuxt', 'Astro', 'Tailwind CSS', 'Bun / Node.js'],
+  },
+  {
+    name: 'Systems',
+    items: ['Rust', 'Go', 'Java', 'C / C#'],
+  },
+  {
+    name: 'Mobile',
+    items: ['Flutter / Dart', 'Kotlin'],
+  },
+  {
+    name: 'Data & ML',
+    items: ['PostgreSQL / SQLite', 'Python', 'PyTorch'],
+  },
 ]
+
+// Flat list, kept for SEO keywords in the layout head.
+export const skills = skillGroups.flatMap((group) =>
+  group.items.map((name) => ({ name })),
+)
 
 export const languages = [
   { name: 'TypeScript', percent: 24, shade: 100 },
@@ -102,18 +107,18 @@ export const projects = [
   {
     name: 'SKLoud App',
     description:
-      'Civic-tech platform for Sangguniang Kabataan: budgets, project tracking, and compliance — co-founded and led from concept to production.',
+      'Civic-tech platform for Sangguniang Kabataan: budgets, project tracking, and compliance. Co-founded it and worked on it from concept to production.',
     language: 'TypeScript',
     stars: null,
     url: 'https://skloud.app',
-    tags: ['co-founder', 'cto', 'flagship'],
+    tags: ['co-founder', 'cio', 'civic-tech'],
     featured: true,
     highlight: true,
   },
   {
     name: 'SKLoud Aurora',
     description:
-      'Our DOST-PCIEERD-funded R&D initiative (₱2.9M grant) building the SKLoud Blockchain Network — a financial transparency layer for SK units. I authored the proposal and lead it as principal architect. Currently in active development.',
+      "A DOST-PCIEERD-funded R&D project building the SKLoud Blockchain Network — a financial transparency layer for SK units. I'm the lead architect. In active development.",
     language: 'Rust',
     stars: null,
     url: 'https://skloud.app',
@@ -125,7 +130,7 @@ export const projects = [
   {
     name: 'Pulse',
     description:
-      'An open-source community emergency response network for the Philippines — hold one button to summon nearby volunteer responders with your location, no mobile subscription or load required. Built in Rust to fill the gaps that 911 leaves. Currently in active development.',
+      'An open-source community emergency response network for the Philippines — hold one button to reach nearby volunteer responders with your location, no mobile subscription or load required. Written in Rust. In active development.',
     language: 'Rust',
     stars: 2,
     url: 'https://pulse.mavyfaby.com',
@@ -146,7 +151,7 @@ export const projects = [
   },
   {
     name: 'tiny-excel',
-    description: 'A promise-based, fast and simple .xlsx file editor using Bun APIs.',
+    description: 'A promise-based .xlsx file editor built on Bun APIs.',
     language: 'TypeScript',
     stars: 12,
     url: 'https://github.com/mavyfaby/tiny-excel',
@@ -155,11 +160,11 @@ export const projects = [
   },
   {
     name: 'INTRVWR',
-    description: '10th ICT Congress 2024 Hackathon Champion — AI-assisted interview platform.',
+    description: 'An AI-assisted interview platform, built for the 10th ICT Congress 2024 hackathon. Won first place.',
     language: 'Vue',
     stars: 2,
     url: 'https://github.com/mavyfaby/bytecode7-hackathon2024',
-    tags: ['vue3', 'hackathon', 'champion'],
+    tags: ['vue3', 'hackathon', 'ai'],
     featured: true,
   },
   {
@@ -173,7 +178,7 @@ export const projects = [
   },
   {
     name: 'url-shortener',
-    description: 'A fast and minimal URL shortener service written in Rust.',
+    description: 'A minimal URL shortener service written in Rust.',
     language: 'Rust',
     stars: 1,
     url: 'https://github.com/mavyfaby/url-shortener',
@@ -259,35 +264,34 @@ export const contributions = [
 
 export const certificates = [
   {
-    title: 'SKLoud Aurora — DOST-PCIEERD ₱2.9M Awardee',
+    title: 'SKLoud Aurora — DOST-PCIEERD Research Grant',
     issuer: 'Department of Science and Technology · PCIEERD',
     year: '2025',
     description:
-      'We, the SKLoud SDS team, helped secure the SKLoud Aurora proposal — a blockchain-based financial transparency platform for Sangguniang Kabataan units, powered by the SKLoud Blockchain Network. Granted ₱2.9M to develop as principal architect.',
+      'The SKLoud SDS team secured funding for SKLoud Aurora — a blockchain-based financial transparency platform for Sangguniang Kabataan units. I serve as its lead architect.',
     category: 'award',
   },
   {
-    title: 'ICT Congress 2024 Hackathon — Champion',
+    title: 'ICT Congress 2024 Hackathon — First Place',
     issuer: 'UC Main · ByteCode7',
     year: '2024',
     description:
-      'Built INTRVWR, an AI-assisted interview platform — first place out of all participating teams at the 10th ICT Congress.',
+      'Built INTRVWR, an AI-assisted interview platform, at the 10th ICT Congress hackathon.',
     category: 'award',
   },
   {
-    title: 'Hack4Gov 2023 CTF — Top 2 Overall (Individual Scoring)',
+    title: 'Hack4Gov 2023 CTF — Top 2, Individual Scoring',
     issuer: 'DICT Region VII · Hack4Gov',
     year: '2023',
     description:
-      'Placed 2nd overall in individual scoring at the Hack4Gov 2023 Capture-The-Flag competition, competing against participants from 7 schools across Region VII.',
+      'Placed 2nd in individual scoring at the Hack4Gov 2023 Capture-The-Flag competition, with participants from 7 schools across Region VII.',
     category: 'award',
   },
   {
     title: "Dean's Lister",
     issuer: 'University of Cebu, Main',
     year: '2020 — 2024',
-    description:
-      'Recognized for sustained academic excellence throughout the BS Computer Science program.',
+    description: 'Named to the Dean\'s List across the BS Computer Science program.',
     category: 'award',
   },
   {
@@ -295,7 +299,7 @@ export const certificates = [
     issuer: 'UC Main — CSP-S',
     year: '2023 — 2024',
     description:
-      'Led project management for the UC Main CSP-S. Developed and shipped the webapp used for tatakforms for all UC Main campuses and the ICT Congress 2024 registration app.',
+      'Handled project management for UC Main CSP-S. Built the tatakforms webapp used across UC Main campuses and the ICT Congress 2024 registration app.',
     category: 'role',
   },
   {
@@ -431,7 +435,7 @@ export const certificates = [
     issuer: 'University of Cebu',
     year: '2024',
     description:
-      'Built the official intercampus registration and attendance system used across UC campuses for ICT Congress 2024.',
+      'Built the intercampus registration and attendance system used across UC campuses for ICT Congress 2024.',
     category: 'shipped',
   },
   {
@@ -447,7 +451,7 @@ export const certificates = [
     issuer: 'Undergraduate Thesis · UC Main',
     year: '2024',
     description:
-      'Designed and built a high-accuracy hand-gesture-based computer control system for Human-Computer Interaction. Includes a manim-based research animation explaining how the model learns.',
+      'Built a hand-gesture-based computer control system for Human-Computer Interaction. Includes a manim-based animation explaining how the model learns.',
     category: 'shipped',
   },
   {
@@ -463,31 +467,31 @@ export const certificates = [
     issuer: 'GitHub @mavyfaby',
     year: '2019 — Present',
     description:
-      '69+ public repositories spanning systems, web, mobile, and ML. Active contributor to PrimeVue, Material Web, and the Flutter ecosystem.',
+      '69+ public repositories spanning systems, web, mobile, and ML. Contributor to PrimeVue, Material Web, and the Flutter ecosystem.',
     category: 'role',
   },
 ]
 
 export const experience = [
   {
-    role: 'Co-Founder & CTO',
+    role: 'Co-Founder & CIO',
     company: 'SKLoud App',
     period: '2024 — Present',
     description:
-      'Co-founded SKLoud App and led it from concept to production. Authored SKLoud Aurora — the winning DOST-PCIEERD proposal (₱2.9M grant) — and lead the SKLoud Blockchain Network as principal architect.',
+      'Co-founded SKLoud App and worked on it from concept to production. Lead architect for SKLoud Aurora and the SKLoud Blockchain Network behind it.',
   },
   {
     role: 'Project Manager / Full-stack Developer / UI/UX Designer',
     company: 'Computing Society of the Philippines - Students · UC Main',
     period: 'Apr 2023 — Jun 2024',
     description:
-      'Served as Project Manager and Lead Full-Stack Developer for UC Main CSP-S A.Y. 2023-2024, leading delivery of student organization systems and designing polished web experiences.',
+      'Project Manager and Full-Stack Developer for UC Main CSP-S, A.Y. 2023-2024. Delivered student organization systems and designed the web experiences around them.',
   },
   {
     role: 'IT Supervisor / Senior Software Engineer',
     company: 'Wellmade Motors & Development Corp.',
     period: 'Nov 2019 — Present',
     description:
-      'Current IT Supervisor / Senior Software Engineer. Previously Junior Software Engineer and Junior Full-stack Developer (Work Immersion Trainee). Designed and developed a full-scale ERP platform supporting modern, multi-branch operations.',
+      'Currently IT Supervisor / Senior Software Engineer, after starting as a Work Immersion Trainee and Junior Software Engineer. Built the ERP platform that runs their multi-branch operations.',
   },
 ]

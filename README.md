@@ -1,6 +1,6 @@
 # Hi, I'm Maverick Fabroa
 
-Software Engineer, Architect, Designer, and Co-Founder & CTO of [SKLoud App](https://skloud.app).
+Software Engineer, Architect, Designer, and Co-Founder & CIO of [SKLoud App](https://skloud.app).
 
 I'm based in Cebu, Philippines, with 7 years of experience in software development and engineering. I build systems and products that are fast, secure, and useful in the real world. My work spans civic-tech, web and mobile products, open source, and infrastructure for transparent governance.
 
@@ -52,9 +52,9 @@ I contribute to tools and libraries I use, and I keep a collection of public pro
 
 ## Highlights
 
-- Co-Founder & CTO of SKLoud App
+- Co-Founder & CIO of SKLoud App
 - Lead architect behind SKLoud Aurora
-- DOST-PCIEERD awardee through SKLoud Aurora
+- SKLoud Aurora is funded by a DOST-PCIEERD research grant
 - ICT Congress 2024 Hackathon Champion
 - Hack4Gov 2023 CTF Top 2 Overall, individual scoring
 - BS Computer Science graduate, University of Cebu - Main Campus

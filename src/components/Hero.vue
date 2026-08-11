@@ -22,17 +22,13 @@ import SkLoudLogo from './SkLoudLogo.vue'
         <div class="lg:col-span-7 max-w-2xl">
           <a
             href="#skloud"
-            class="group inline-flex items-center gap-2 mb-6 pl-1 pr-4 py-1 rounded-full border border-border bg-card hover:border-foreground/40 transition-colors"
+            class="group inline-flex items-center gap-2.5 mb-6 pl-1.5 pr-3.5 py-1.5 rounded-full border border-border bg-card hover:border-foreground/40 transition-colors"
           >
-            <span class="grid place-items-center w-7 h-7 rounded-full bg-foreground text-background">
-              <SkLoudLogo :size="20" />
+            <span class="grid place-items-center w-6 h-6 rounded-full border border-border text-foreground">
+              <SkLoudLogo :size="16" />
             </span>
-            <span class="grid place-items-center h-6 px-2 rounded-full bg-foreground text-background text-[10px] font-bold tracking-tight whitespace-nowrap">
-              CO-FOUNDER · CTO
-            </span>
-            <span class="text-xs font-medium">SKLoud App</span>
-            <span class="hidden sm:inline text-xs font-mono text-muted-foreground">
-              · SKLoud Aurora ₱2.9M DOST-PCIEERD Awardee
+            <span class="text-xs text-muted-foreground">
+              Currently building <span class="text-foreground font-medium">SKLoud App</span>
             </span>
             <svg class="w-3 h-3 text-muted-foreground group-hover:text-foreground group-hover:translate-x-0.5 transition-all" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
@@ -72,16 +68,12 @@ import SkLoudLogo from './SkLoudLogo.vue'
             </Button>
           </div>
 
-          <div class="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-px bg-border max-w-2xl">
-            <div
-              v-for="s in profile.stats"
-              :key="s.label"
-              class="bg-background p-4 sm:p-5"
-            >
-              <div class="text-2xl md:text-3xl font-bold tracking-tight">{{ s.value }}</div>
-              <div class="text-xs uppercase tracking-wider text-muted-foreground mt-1 font-mono">
+          <div class="mt-14 flex flex-wrap items-center gap-x-10 gap-y-4">
+            <div v-for="s in profile.stats" :key="s.label" class="flex items-baseline gap-2">
+              <span class="text-xl font-semibold tracking-tight">{{ s.value }}</span>
+              <span class="text-xs uppercase tracking-wider text-muted-foreground font-mono">
                 {{ s.label }}
-              </div>
+              </span>
             </div>
           </div>
         </div>

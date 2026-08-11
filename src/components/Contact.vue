@@ -12,9 +12,9 @@ import Button from './ui/Button.vue'
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground">Contact</span>
         <span class="h-px w-8 bg-foreground"></span>
       </div>
-      <h2 class="text-4xl md:text-7xl font-bold tracking-tighter text-balance">
-        Let's build something
-        <span class="italic font-light text-muted-foreground">remarkable.</span>
+      <h2 class="text-4xl md:text-6xl font-bold tracking-tighter text-balance">
+        Let's build
+        <span class="italic font-light text-muted-foreground">something.</span>
       </h2>
       <p class="mt-6 text-base md:text-lg text-muted-foreground max-w-xl mx-auto text-balance">
         Open to collaborations, freelance work, and conversations about engineering, design, and systems.

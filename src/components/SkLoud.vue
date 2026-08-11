@@ -24,13 +24,16 @@ const icons: Record<string, string> = {
 
     <div class="relative mx-auto max-w-7xl px-6">
       <div class="max-w-3xl mb-12" data-sal="fade" data-sal-duration="800">
-        <Badge variant="solid" class="mb-4 font-mono">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          Flagship · Currently Building
+        <Badge variant="outline" class="mb-4 font-mono">
+          <span class="relative flex h-1.5 w-1.5 mr-0.5">
+            <span class="absolute inline-flex h-full w-full rounded-full bg-foreground opacity-70 animate-ping"></span>
+            <span class="relative inline-flex h-1.5 w-1.5 rounded-full bg-foreground"></span>
+          </span>
+          Currently building
         </Badge>
         <SectionHeader
           class="!mb-0"
-          kicker="SKLoud App · DOST-PCIEERD Awardee"
+          kicker="SKLoud App"
           :title="skloud.tagline"
         />
       </div>
@@ -78,35 +81,43 @@ const icons: Record<string, string> = {
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
               </Button>
               <Badge variant="outline" class="font-mono">DOST-PCIEERD 2025</Badge>
-              <Badge variant="outline" class="font-mono">₱2.9M Grant</Badge>
             </div>
           </div>
         </Card>
 
         <Card
-          class="lg:col-span-2 p-8 md:p-10 relative overflow-hidden bg-foreground text-background border-foreground"
+          class="lg:col-span-2 p-8 md:p-10 relative overflow-hidden"
           data-sal="slide-left" data-sal-duration="800"
         >
-          <div class="absolute inset-0 opacity-[0.04] pointer-events-none" style="background-image: radial-gradient(circle, currentColor 1px, transparent 1px); background-size: 16px 16px;"></div>
           <div class="relative h-full flex flex-col">
-            <p class="text-xs font-mono uppercase tracking-[0.2em] opacity-60 mb-3">Research Grant</p>
-            <div class="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-2">₱2.9M</div>
-            <p class="text-sm opacity-80 mb-6">awarded by DOST-PCIEERD (2025)</p>
+            <p class="text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground mb-3">
+              Research
+            </p>
+            <h4 class="text-2xl font-semibold tracking-tight mb-2">SKLoud Aurora</h4>
+            <p class="text-sm text-muted-foreground leading-relaxed mb-6">
+              A financial transparency platform for SK units, built on the SKLoud Blockchain Network.
+            </p>
 
-            <div class="border-t border-background/20 pt-6 mt-auto space-y-4">
+            <dl class="border-t border-border pt-6 mt-auto space-y-4">
               <div>
-                <p class="text-xs font-mono uppercase tracking-wider opacity-60 mb-1">Project</p>
-                <p class="text-sm font-semibold leading-snug">
-                  SKLoud Aurora — a financial transparency platform for SK units, powered by the SKLoud Blockchain Network.
-                </p>
+                <dt class="text-xs font-mono uppercase tracking-wider text-muted-foreground mb-1">
+                  Funding
+                </dt>
+                <dd class="text-sm">DOST-PCIEERD research grant, 2025</dd>
               </div>
               <div>
-                <p class="text-xs font-mono uppercase tracking-wider opacity-60 mb-1">Led by</p>
-                <p class="text-sm font-semibold">
-                  Maverick Fabroa — Co-Founder, CTO &amp; Principal Architect
-                </p>
+                <dt class="text-xs font-mono uppercase tracking-wider text-muted-foreground mb-1">
+                  My role
+                </dt>
+                <dd class="text-sm">Lead architect</dd>
               </div>
-            </div>
+              <div>
+                <dt class="text-xs font-mono uppercase tracking-wider text-muted-foreground mb-1">
+                  Status
+                </dt>
+                <dd class="text-sm">In active development</dd>
+              </div>
+            </dl>
           </div>
         </Card>
       </div>

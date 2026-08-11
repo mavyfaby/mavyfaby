@@ -8,7 +8,7 @@ import Card from './ui/Card.vue'
   <section id="about" class="relative py-24 md:py-32 border-t border-border">
     <div class="mx-auto max-w-7xl px-6">
       <div data-sal="fade" data-sal-duration="700">
-        <SectionHeader kicker="About" title="Building things that are fast, secure, and well-crafted." />
+        <SectionHeader kicker="About" title="Building things that are fast and hard to break." />
       </div>
       <div class="grid lg:grid-cols-5 gap-8 items-start">
         <div class="lg:col-span-3 space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground" data-sal="slide-right" data-sal-duration="800">
@@ -20,7 +20,7 @@ import Card from './ui/Card.vue'
             <span class="text-foreground font-medium">Vue</span>,
             <span class="text-foreground font-medium">Nuxt</span>, and
             <span class="text-foreground font-medium">Astro</span>. I care about performance budgets,
-            clean architecture, and design that respects the user.
+            clean architecture, and interfaces that don't waste the user's time.
           </p>
           <div class="grid sm:grid-cols-2 gap-3 pt-2">
             <div

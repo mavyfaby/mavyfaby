@@ -69,7 +69,7 @@ const groupedCertificates = computed(() =>
         <SectionHeader
           kicker="Achievements & Education"
           title="Certificates & milestones."
-          description="Recognitions, leadership roles, certifications, shipped systems, and formal education that shaped how I build."
+          description="Recognitions, roles, certifications, shipped systems, and formal education."
         />
       </div>
 

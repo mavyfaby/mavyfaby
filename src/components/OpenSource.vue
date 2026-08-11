@@ -11,7 +11,7 @@ import Card from './ui/Card.vue'
         <SectionHeader
           kicker="Open Source"
           title="Contributions to projects I rely on."
-          description="Giving back to the communities that build the tools I use every day."
+          description="Patches and fixes to the libraries I use day to day."
         />
       </div>
 
