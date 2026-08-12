@@ -2,7 +2,7 @@
 
 Software Engineer, Architect, Designer, and Co-Founder & CIO of [SKLoud App](https://skloud.app).
 
-I'm based in Cebu, Philippines, with 7 years of experience in software development and engineering. I build systems and products that are fast, secure, and useful in the real world. My work spans civic-tech, web and mobile products, open source, and infrastructure for transparent governance.
+I'm based in Cebu, Philippines, with 8 years of experience in software development and engineering. I build systems and products that are fast, secure, and useful in the real world. My work spans civic-tech, web and mobile products, open source, and infrastructure for transparent governance.
 
 <p align="center">
   <a href="https://mavyfaby.com">Portfolio</a> ·
